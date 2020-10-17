@@ -18,17 +18,17 @@ public class Jugador extends Futbolista implements Comparable<Object>{
 		return (this.getEdad() - futbolista.getEdad());
 	}
 	
-	public String toString() {
-		return "El futbolista " + this.getNombre() + " tiene " + this.getEdad() + ", y juega de " + this.getPosicion() +
-				" con el dorsal " + this.getDorsal() + ". Ha marcado " + this.getGolesMarcados();
-	}
-	
 	public byte getDorsal() {
 		return this.dorsal;
 	}
 	
 	public short getGolesMarcados() {
 		return this.golesMarcados;
+	}
+	
+	public String toString() {
+		return "El futbolista " + this.getNombre() + " tiene " + this.getEdad() + ", y juega de " + this.getPosicion() +
+				" con el dorsal " + this.getDorsal() + ". Ha marcado " + this.getGolesMarcados();
 	}
 	
 }

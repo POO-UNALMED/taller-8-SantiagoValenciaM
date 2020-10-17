@@ -9,11 +9,6 @@ public class Portero extends Futbolista{
 		this.golesRecibidos = golesRecibidos; this.dorsal = dorsal;
 	}
 	
-	public String toString() {
-		return "El futbolista " + this.getNombre() + " tiene " + this.getEdad() + ", y juega de " + this.getPosicion() +
-		    	" con el dorsal " + this.getDorsal() + ". Le han marcado " + this.getGolesRecibidos();
-	}
-	
 	public short getGolesRecibidos() {
 		return this.golesRecibidos;
 	}
@@ -28,6 +23,11 @@ public class Portero extends Futbolista{
 	
 	public boolean jugarConLasManos() {
 		return true;
+	}
+	
+	public String toString() {
+		return "El futbolista " + this.getNombre() + " tiene " + this.getEdad() + ", y juega de " + this.getPosicion() +
+		    	" con el dorsal " + this.getDorsal() + ". Le han marcado " + this.getGolesRecibidos();
 	}
 	
 }

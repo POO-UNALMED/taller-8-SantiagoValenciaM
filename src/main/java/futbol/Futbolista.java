@@ -14,10 +14,6 @@ public class Futbolista implements Comparable<Object>{
 		this("Maradona", 30, "delantero");
 	}
 	
-	public String toString() {
-		return "El futbolista "+ nombre +" tiene " + edad + ", y juega de " + posicion;
-	}
-	
 	public int compareTo(Object futbolista) {
 		if(this.equals(futbolista)) {
 			return 1;
@@ -49,5 +45,9 @@ public class Futbolista implements Comparable<Object>{
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+    
+	public String toString() {
+		return "El futbolista "+ nombre +" tiene " + edad + ", y juega de " + posicion;
+	}
     
 }
