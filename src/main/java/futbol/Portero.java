@@ -14,21 +14,20 @@ public class Portero extends Futbolista{
 		    	" con el dorsal " + this.getDorsal() + ". Le han marcado " + this.getGolesRecibidos();
 	}
 	
-	public int compareTo(Portero portero) {
-		return (portero.getGolesRecibidos() -this.getGolesRecibidos());
-	}
-
 	public short getGolesRecibidos() {
 		return this.golesRecibidos;
 	}
 	
-	public boolean jugarConLasManos() {
-		return true;
+	public int compareTo(Portero portero) {
+		return (portero.getGolesRecibidos() -this.getGolesRecibidos());
 	}
 	
 	public byte getDorsal() {
 		return this.dorsal;
 	}
 	
+	public boolean jugarConLasManos() {
+		return true;
+	}
 	
 }
